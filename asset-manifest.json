@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/drew-kempen-react-portfolio/static/css/main.4e200bfb.css",
+    "main.js": "/drew-kempen-react-portfolio/static/js/main.a9bb21a0.js",
+    "static/media/rocky-wall.png": "/drew-kempen-react-portfolio/static/media/rocky-wall.eb057a9c8b7c05c70f5d.png",
+    "static/media/cartographer.png": "/drew-kempen-react-portfolio/static/media/cartographer.684928c6dd791afe1081.png",
+    "static/media/mountains-bw-wide.jpg": "/drew-kempen-react-portfolio/static/media/mountains-bw-wide.74a54571a00b3af2514f.jpg",
+    "static/media/grey-bard-logo.png": "/drew-kempen-react-portfolio/static/media/grey-bard-logo.a3a45b37b63aee848c35.png",
+    "static/media/social.png": "/drew-kempen-react-portfolio/static/media/social.7556616ff67fc2571447.png",
+    "static/media/mtn-logo.png": "/drew-kempen-react-portfolio/static/media/mtn-logo.835aa52bed482da09abb.png",
+    "static/media/bugTrackerLogo.png": "/drew-kempen-react-portfolio/static/media/bugTrackerLogo.eaea9ec319bcca35efa1.png",
+    "static/media/weather.png": "/drew-kempen-react-portfolio/static/media/weather.57612c9fe9057bb2a79a.png",
+    "static/media/lock.png": "/drew-kempen-react-portfolio/static/media/lock.381bae501d81d6d16c6c.png",
+    "index.html": "/drew-kempen-react-portfolio/index.html",
+    "main.4e200bfb.css.map": "/drew-kempen-react-portfolio/static/css/main.4e200bfb.css.map",
+    "main.a9bb21a0.js.map": "/drew-kempen-react-portfolio/static/js/main.a9bb21a0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e200bfb.css",
+    "static/js/main.a9bb21a0.js"
+  ]
+}
