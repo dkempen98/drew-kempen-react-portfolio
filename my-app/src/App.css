@@ -1,0 +1,317 @@
+:root {
+  --text-color: #f7e8ca;
+  --color-one: #1a4649;
+  --color-two: #e86d35;
+  --color-two-transparent: #e86d3580;
+  --color-three: #657871; 
+  --color-three-transparent: #65787180; 
+  --color-four: #d18158;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap);
+
+* {
+  color: var(--text-color);
+  margin: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-image: url(./images/rocky-wall.png);
+  background-blend-mode: multiply;
+  background-color: var(--color-one);
+  font-family: 'Mukta', sans-serif;
+}
+
+h1,
+h2,
+h3,
+p{
+  margin: 10px;
+}
+
+p,
+li {
+  font-size: larger;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-two);
+  border-radius: 100vw;
+}
+
+@supports (scrollbar-color: var(--color-two), var(--color-one)) {
+  * {
+    scrollbar-color: var(--color-two), var(--color-one);
+  }
+}
+
+.nav-container{
+  background-color: var(--color-three);
+  background-image: url(./images/mountains-bw-wide.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  min-height: 5rem;
+  margin: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  box-shadow: var(--color-two) 0 0 0 2px;
+}
+
+#nav-title {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#mtn-logo {
+  max-height: 3rem;
+}
+
+#title {
+  font-size: 3em
+}
+
+#nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-items{
+  margin: 2rem 2rem 2rem 0;
+}
+
+.nav-text{
+  background-color: var(--color-three-transparent);
+  padding: 5px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-text:hover{
+  background-color: var(--color-two);
+}
+
+.current{
+  background-color: var(--color-two-transparent);
+}
+
+.about-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.about-1 {
+  background-image: url(./images/cartographer.png);
+  background-color: var(--color-three);
+  margin-top: 3rem;
+  margin-left: 0;
+  align-self: flex-start;
+  width: 75%;
+  padding: 10px;
+}
+
+
+
+.about-2 {
+  background-image: url(./images/cartographer.png);
+  margin: 3rem 0 3rem 0;
+  background-color: var(--color-four);
+  align-self: flex-end;
+  width: 75%;
+  padding: 10px;
+}
+
+#skill-list {
+  columns: 2;
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 0 4% 0;
+  background-color: var(--color-two);
+  padding: 1%;
+}
+
+#carousel-container {
+  display: flex;
+  min-height: 475px;
+}
+
+#carousel {
+  display: flex;
+  overflow: auto;
+  position: relative;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 24px;
+}
+
+.carousel-item {
+  scroll-snap-align: start;
+  list-style: none;
+  margin: 1rem;
+  height: 400px;
+  width: 400px;
+  background: black;
+  border-radius: 10px;
+}
+
+.project-image {
+  width: 400px;
+  height: 400px;
+  box-shadow: black .5rem .5rem .6rem 0rem;
+  border-radius: 10px;
+}
+
+.project-image:hover {
+  opacity: .4;
+}
+
+.project-footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.git-logo {
+  margin-left: 1rem;
+  max-height: 1.5em;
+  max-width: 1.5em;
+}
+
+.git-logo:hover {
+  filter: invert(1);
+}
+
+#scroll-left,
+#scroll-right {
+  color: var(--color-two);
+  background: none;
+  border: none;
+  border-radius: 5px;
+  line-height: 40px;
+  max-height: 50px;
+  align-self: center;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+#scroll-left {
+  margin-left: 5px;
+}
+
+#scroll-right {
+  margin-right: 5px;
+}
+
+#scroll-left,
+#scroll-right:hover {
+  cursor: pointer;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: black .5rem .5rem .6rem 0rem;
+  background-image: url(./images/cartographer.png);
+  background-color: var(--color-four);
+  max-width: 50rem; 
+}
+
+.form-label {
+  font-size: 1.2em;
+}
+
+.form-field {
+  background-color: var(--color-three);
+  border: solid var(--text-color);
+  margin-bottom: 5px;
+  /* min-width: 100%; */
+  border-radius: 5px;
+}
+
+#message-field {
+  min-height: 6rem;
+}
+
+#submit-btn {
+  margin: 1rem 0 1rem 0;  
+  width: 4rem;
+  align-self: center;
+}
+
+#submit-btn:hover {
+  cursor: pointer;
+  background-color: var(--text-color);
+  color: var(--color-three);
+  border-color: var(--color-three);
+}
+
+#submit-btn:active {
+  color: var(--color-one);
+  border-color: var(--color-one);
+  background-color: #d6c9af;
+}
+
+@media (max-width:1000px) {
+  .about-1,
+  .about-2 {
+    width: 90%;
+  }
+  
+  .nav-container {
+    flex-direction: column;
+    position: static;
+  }
+
+  #mtn-logo {
+    display: none;
+  }
+
+  #contact-form {
+    max-width: 90%;
+  }
+}
+
+@media (max-width:600px) {
+  .project-image,
+  .carousel-item {
+    height: 250px;
+    width: 250px;
+    scroll-snap-align: start;
+  }
+  #carousel-container {
+    min-height: 350px;
+  }
+  #scroll-left,
+  #scroll-right {
+    display: none;
+  }
+  #nav-links {
+    flex-direction: column;
+  }
+}
