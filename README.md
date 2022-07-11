@@ -2,7 +2,7 @@
 
 My portfolio made with React
 
-https://dkempen98.github.io/drew-kempen-react-portfolio/
+www.drewkempen.io
 
 ## Description
 
