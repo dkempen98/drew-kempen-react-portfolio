@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../images/mtn-logo.png'
+import resume from './directory/example-resume.pdf'
 
 // Create the different page routes: About, Projects and Contact Me
 
@@ -27,6 +28,11 @@ function NavList({ currentPage, changePage }) {
                         className={currentPage === 'Projects' ? 'nav-text current' : 'nav-text'}
                         >
                         Projects
+                        </a>
+                    </li>
+                    <li className="nav-items">
+                        <a download={'placeholder-resume'} href={resume} className='nav-text'>
+                        Resume
                         </a>
                     </li>
                     <li className="nav-items">

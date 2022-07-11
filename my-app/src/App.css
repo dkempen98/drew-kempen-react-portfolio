@@ -19,12 +19,28 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
 
 body {
   background-image: url(./images/rocky-wall.png);
   background-blend-mode: multiply;
   background-color: var(--color-one);
   font-family: 'Mukta', sans-serif;
+  min-height: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root-div {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1,
@@ -118,6 +134,26 @@ li {
   background-color: var(--color-two-transparent);
 }
 
+footer {
+  background-image: url('./images/dark-wood.png');
+  background-color: var(--color-one);
+  max-height: 6rem;
+  border-top: solid var(--color-two) 3px;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-image {
+  max-height: 3rem;
+  margin: .5rem;
+}
+
+#footer-git {
+  filter: invert(.9);
+}
+
 .about-container{
   display: flex;
   flex-direction: column;
@@ -158,6 +194,11 @@ li {
 #carousel-container {
   display: flex;
   min-height: 475px;
+}
+
+.project-page {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #carousel {
@@ -235,6 +276,7 @@ li {
   flex-direction: column;
   padding: 10px;
   margin: auto;
+  margin-bottom: 4%;
   border-radius: 10px;
   box-shadow: black .5rem .5rem .6rem 0rem;
   background-image: url(./images/cartographer.png);
@@ -277,15 +319,18 @@ li {
   background-color: #d6c9af;
 }
 
-@media (max-width:1000px) {
+@media (max-width:1050px) {
   .about-1,
   .about-2 {
     width: 90%;
   }
   
   .nav-container {
+    background-image: url('./images/mountains-2-bw.jpg');
+    background-position: center center;
     flex-direction: column;
     position: static;
+    align-items: center;
   }
 
   #mtn-logo {
@@ -311,7 +356,16 @@ li {
   #scroll-right {
     display: none;
   }
+  .nav-items {
+    margin: 0 0 5% 0;
+  }
+  #nav-title {
+    margin: 0 0 0 0;
+  }
   #nav-links {
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-left: 0;
   }
 }

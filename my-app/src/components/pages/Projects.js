@@ -19,7 +19,6 @@ const moveRight = () => {
 export default function Projects() {
     return(
         <div className='project-page'>
-            <h1 className='section-header'>Projects</h1>
             <div aria-label='List of projects' id='carousel-container'>
                 <button id='scroll-left' onClick={moveLeft}>&#8610;</button>
                 <ul id='carousel'>
