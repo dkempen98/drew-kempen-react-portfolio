@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../images/mtn-logo.png'
-import resume from './directory/example-resume.pdf'
+import resume from './directory/drew-kempen-resume.pdf'
 
 // Create the different page routes: About, Projects and Contact Me
 
@@ -31,8 +31,8 @@ function NavList({ currentPage, changePage }) {
                         </a>
                     </li>
                     <li className="nav-items">
-                        <a download={'placeholder-resume'} href={resume} className='nav-text'>
-                        Resume
+                        <a download={'drew-kempen-resume'} href={resume} className='nav-text'>
+                        &#10515; Resume
                         </a>
                     </li>
                     <li className="nav-items">
