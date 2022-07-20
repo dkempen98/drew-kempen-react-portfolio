@@ -23,7 +23,7 @@ export default function Navigation() {
     return (
         <div id='root-div'>
             <NavItems currentPage={currentPage} changePage={changePage} />
-            {renderPage()}
+                {renderPage()}
             <Footer />
         </div>
     )

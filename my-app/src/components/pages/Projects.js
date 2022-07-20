@@ -3,7 +3,7 @@ import bugTracker from '../../images/bugTrackerLogo.png'
 import weather from '../../images/weather.png'
 import lock from '../../images/lock.png'
 import inlineDb from '../../images/sql.png'
-import bard from '../../images/grey-bard-logo.png'
+import slugger from '../../images/slugger-image.png'
 import mongoSocial from '../../images/social.png'
 import git from '../../images/git-logo.png'
 
@@ -22,6 +22,17 @@ export default function Projects() {
             <div aria-label='List of projects' id='carousel-container'>
                 <button id='scroll-left' onClick={moveLeft}>&#8610;</button>
                 <ul id='carousel'>
+                    <li className='carousel-item'>
+                        <a href='https://github.com/G3TSN1P3D/glowing-broccoli' target={'_blank'}>
+                            <img className='project-image' src={slugger} alt='Baseball Base Logo'></img>
+                        </a>
+                        <div className='project-footer'>
+                            Stat Tracker
+                            <a href='https://github.com/G3TSN1P3D/glowing-broccoli' target={'_blank'}>
+                                <img className='git-logo' src={git}></img>
+                            </a>
+                        </div>
+                    </li>
                     <li className='carousel-item'>
                         <a href='https://congenial-potatoes.herokuapp.com/' target={'_blank'}>
                             <img className='project-image' src={bugTracker} alt='Bug Logo'>
@@ -68,17 +79,6 @@ export default function Projects() {
                             </a>
                         </div>
                         
-                    </li>
-                    <li className='carousel-item'>
-                        <a href='https://dkempen98.github.io/concert-finder/' target={'_blank'}>
-                            <img className='project-image' src={bard} alt='Guitar Logo'></img>
-                        </a>
-                        <div className='project-footer'>
-                            Concert Finder
-                            <a href='https://github.com/dkempen98/concert-finder' target={'_blank'}>
-                                <img className='git-logo' src={git}></img>
-                            </a>
-                        </div>
                     </li>
                     <li className='carousel-item'>
                         <a href='https://github.com/dkempen98/mongo-social' target={'_blank'}>
