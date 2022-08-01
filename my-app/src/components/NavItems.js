@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import logo from '../images/mtn-logo.png'
 import resume from './directory/drew-kempen-resume.pdf'
 
@@ -6,11 +6,15 @@ import resume from './directory/drew-kempen-resume.pdf'
 
 function NavList({ currentPage, changePage }) {
     return (
-            <div className="nav-container">            
+            <nav className="nav-container">
                 <header id='nav-title'>
                     <img src={logo} alt='mountain logo' id='mtn-logo'></img>
                     <h1 id='title'>Drew Kempen</h1>
                 </header>
+                <input type={'checkbox'} class='nav-toggle' id='nav-toggle'></input>
+                <label for="nav-toggle" className='nav-toggle-label'>
+                    <span></span>
+                </label>
                 <ul id='nav-links'>
                     <li className="nav-items">
                         <a
@@ -45,8 +49,7 @@ function NavList({ currentPage, changePage }) {
                         </a>
                     </li>
                 </ul>
-            </div>
-
+            </nav>
       );
 }
 
