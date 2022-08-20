@@ -6,7 +6,7 @@ export default function About() {
             <div className='about-1'>
                 <h1>About Me</h1>
                 <p>
-                I am a developer from Columbus, Ohio who has experience with software testing and project management with Allita 360. I am attending a 2U full stack boot camp and plan to further my education with the program to learn Python. I also have some college experience where I received an Associates of Arts degree from The Ohio State University.        
+                Full stack web developer utilizing experience in a combination of fields ranging from software to farming to provide a unique point of view on web development and user-friendly design. Recently received certification in full stack web development through a program with The Ohio State University learning JavaScript, React, NoSQL, SQL, CSS, NodeJS, GraphQL and more. I also have working experience with clients and have good communication skills with both people who are working on software and have technical knowledge as well as people who are less technical but still know what they want out of a system. A big part of my work history has been bridging the gap between the people asking for features in an abstract manner and translating that into something concrete that the development team can work on and being the communication in the middle for any questions or changes from either side. I strive to work with the people making requests and deliver a final product that not only meets the needs but surpasses them wherever possible by looking at the big picture of a project and planning ahead.        
                 </p>
             </div>
             <div className='about-2'>

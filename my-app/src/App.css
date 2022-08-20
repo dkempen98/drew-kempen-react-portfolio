@@ -368,6 +368,8 @@ footer {
 
 #message-field {
   min-height: 6rem;
+  max-width: 100%;
+  min-width: 100%;
 }
 
 #submit-btn {

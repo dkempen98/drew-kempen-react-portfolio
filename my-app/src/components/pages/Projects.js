@@ -24,7 +24,7 @@ export default function Projects() {
                 <ul id='carousel'>
                     <li className='carousel-item'>
                         <div className='image-container'>
-                            <a href='https://github.com/G3TSN1P3D/glowing-broccoli' target={'_blank'}>
+                            <a href='https://github.com/dkempen98/slugger-stats' target={'_blank'}>
                                 <img className='project-image' src={slugger} alt='Baseball Base Logo'></img>
                             </a>
                             <ul className='image-desc'>
