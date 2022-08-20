@@ -155,7 +155,6 @@ li {
   transform-origin: top left;
 }
 
-
 .current{
   background-color: var(--color-two-transparent);
 }
