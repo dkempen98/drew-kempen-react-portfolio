@@ -35,17 +35,17 @@ function NavList({ currentPage, changePage }) {
                         </a>
                     </li>
                     <li className="nav-items">
-                        <a download={'drew-kempen-resume'} href={resume} className='nav-text'>
-                        &#10515; Resume
-                        </a>
-                    </li>
-                    <li className="nav-items">
                         <a
                         href="#contact"
                         onClick={() => changePage('Contact')}
                         className={currentPage === 'Contact' ? 'nav-text current' : 'nav-text'}
                         >
                         Contact
+                        </a>
+                    </li>
+                    <li className="nav-items">
+                        <a download={'drew-kempen-resume'} href={resume} className='nav-text'>
+                        &#10515; Resume
                         </a>
                     </li>
                 </ul>

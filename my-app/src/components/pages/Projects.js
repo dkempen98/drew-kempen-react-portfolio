@@ -36,7 +36,7 @@ export default function Projects() {
                         </div>
                         <div className='project-footer'>
                             Stat Tracker
-                            <a href='https://github.com/G3TSN1P3D/glowing-broccoli' target={'_blank'}>
+                            <a href='https://github.com/dkempen98/slugger-stats' target={'_blank'}>
                                 <img className='git-logo' src={git}></img>
                             </a>
                         </div>
