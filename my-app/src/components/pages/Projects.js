@@ -43,7 +43,7 @@ export default function Projects() {
                     </li>
                     <li className='carousel-item'>
                         <div className='image-container'>
-                            <a href='https://congenial-potatoes.herokuapp.com/login' target={'_blank'}>
+                            <a href='https://github.com/IvanGoya/congenial-potato' target={'_blank'}>
                                 <img className='project-image' src={bugTracker} alt='Bug Logo'></img>
                                 <ul className='image-desc'>
                                     <li>SQL</li>
