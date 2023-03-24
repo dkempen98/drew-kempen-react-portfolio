@@ -1,11 +1,11 @@
 :root {
-  --text-color: #f7e8ca;
-  --color-one: #1a4649;
-  --color-two: #e86d35;
-  --color-two-transparent: #e86d3580;
-  --color-three: #657871; 
-  --color-three-transparent: #65787180; 
-  --color-four: #d18158;
+  --text-color: #f3e7cf;
+  --color-one: #444444;
+  --color-two: #205e46;
+  --color-two-transparent: #c05a2b;
+  --color-three: #000000; 
+  --color-three-transparent: #00000060; 
+  --color-four: #b14e1c;
 }
 
 @import url(https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap);
@@ -76,7 +76,7 @@ li {
 }
 
 .nav-container{
-  background-color: var(--color-three);
+  background-color: var(--color-one);
   background-image: url(./images/mountains-bw-wide.jpg);
   background-size: cover;
   background-blend-mode: multiply;
@@ -175,8 +175,17 @@ footer {
   margin: .5rem;
 }
 
+.footer-image:hover {
+  background-color: white;
+  border-radius: 6px;
+}
+
 #footer-git {
   filter: invert(.9);
+}
+
+#footer-git img {
+  border-radius: 100px;
 }
 
 .about-container{
@@ -199,7 +208,7 @@ footer {
 .about-2 {
   background-image: url(./images/cartographer.png);
   margin: 3rem 0 3rem 0;
-  background-color: var(--color-four);
+  background-color: var(--color-two);
   align-self: flex-end;
   width: 75%;
   padding: 10px;
@@ -278,6 +287,8 @@ footer {
   bottom: -0.25rem;
   width: 100%;
   background-color: var(--color-three);
+  border: 3px  solid var(--color-two);
+  border-left: none;
   z-index: -1;
 
   transform: scaleX(0);
@@ -349,7 +360,7 @@ footer {
   border-radius: 10px;
   box-shadow: black .5rem .5rem .6rem 0rem;
   background-image: url(./images/cartographer.png);
-  background-color: var(--color-four);
+  background-color: var(--color-two);
   max-width: 50rem; 
 }
 

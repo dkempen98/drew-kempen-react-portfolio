@@ -6,6 +6,7 @@ import inlineDb from '../../images/sql.png'
 import slugger from '../../images/slugger-image.png'
 import mongoSocial from '../../images/social.png'
 import git from '../../images/git-logo.png'
+import football from '../../images/fantasy_football.png'
 
 const moveLeft = () => {
     let container = document.getElementById('carousel')
@@ -22,6 +23,23 @@ export default function Projects() {
             <div aria-label='List of projects' id='carousel-container'>
                 <button id='scroll-left' onClick={moveLeft}>&#8610;</button>
                 <ul id='carousel'>
+                    <li className='carousel-item'>
+                        <div className='image-container'>
+                            <a href='https://fantasy-league-stats-jlyaj8lgk-dkempen98.vercel.app/' target={'_blank'}>
+                                <img className='project-image' src={football} alt='Bug Logo'></img>
+                                <ul className='image-desc'>
+                                    <li>React</li>
+                                    <li>chart.js</li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div className='project-footer'>
+                            Bug Tracker
+                            <a href='https://github.com/dkempen98/fantasy-league-stats' target={'_blank'}>
+                                <img className='git-logo' src={git}></img>
+                            </a>
+                        </div>
+                    </li>
                     <li className='carousel-item'>
                         <div className='image-container'>
                             <a href='https://github.com/dkempen98/slugger-stats' target={'_blank'}>
