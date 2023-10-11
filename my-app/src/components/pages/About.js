@@ -12,7 +12,7 @@ export default function About() {
             <div className='about-2'>
                 <h1>What I Can Do</h1>
                 <p>
-                    I am a full stack developer with experience using the following tools:
+                    I am a full stack web developer with experience using the following tools:
                 </p>
                 <ul id='skill-list'>
                     <li>JavaScript</li>

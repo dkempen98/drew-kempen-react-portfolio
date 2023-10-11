@@ -25,8 +25,8 @@ export default function Projects() {
                 <ul id='carousel'>
                     <li className='carousel-item'>
                         <div className='image-container'>
-                            <a href='https://fantasy-league-stats-jlyaj8lgk-dkempen98.vercel.app/' target={'_blank'}>
-                                <img className='project-image' src={football} alt='Bug Logo'></img>
+                            <a href='https://fantasy-league-stats.vercel.app/' target={'_blank'}>
+                                <img className='project-image' src={football} alt='Football Logo'></img>
                                 <ul className='image-desc'>
                                     <li>React</li>
                                     <li>chart.js</li>
@@ -34,7 +34,7 @@ export default function Projects() {
                             </a>
                         </div>
                         <div className='project-footer'>
-                            Bug Tracker
+                            Fantasy Football Stats
                             <a href='https://github.com/dkempen98/fantasy-league-stats' target={'_blank'}>
                                 <img className='git-logo' src={git}></img>
                             </a>
